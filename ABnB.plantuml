@@ -1,0 +1,29 @@
+@startuml dogs
+
+Class dogsitter {
+  name: text
+  has_many :strolls
+  has_many :dogs, through: :strolls
+}
+
+Class dog {
+  breed: text
+  has_many :strolls
+  has_many :dogsitters, through: :strolls
+}
+
+Class stroll {
+  belongs_to :dog
+  belongs_to :dogsitter
+}
+
+Class city {
+  name: text
+}
+
+' dogsitter "*" - "*" dog : promene
+dogsitter "1" --- "*" stroll: promène
+dog "1" --- "*" stroll: promène
+
+
+@enduml

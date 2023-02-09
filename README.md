@@ -1,24 +1,11 @@
-# README
+# ABnB_dogs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Nous travaillons sur la création de bases de données.
+Il est possible de créer :
 
-Things you may want to cover:
+- un dogsitter
+- un dog
+- une promenade
+- une ville
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Un fichier db/seeds.rb est disponible pour effectuer des tests sans devoir tout initialiser manuellement.
